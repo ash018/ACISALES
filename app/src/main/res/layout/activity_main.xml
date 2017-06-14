@@ -7,23 +7,190 @@
 
 
 
-    <TextView
-        android:id="@+id/ason"
-        android:layout_width="fill_parent"
-        android:layout_height="80dp"
-        android:gravity="center_horizontal"
-        android:textSize="30dp"
-        android:paddingBottom="3dip"
-        android:textColor="@color/colorAccent"
+
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:shrinkColumns="*"
+        android:id="@+id/table"
+        android:stretchColumns="*"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true">
+        <TableRow
+            android:id="@+id/textviewx"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="5"
+
+
+            >
+            <TextView
+                android:id="@+id/ason"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center_horizontal"
+                android:textSize="15dp"
+                android:paddingBottom="1dip"
+                android:layout_weight="5"
+                android:background="#4583e8"
+                android:textColor="@color/white"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </TableRow>
+
+
+    <TableRow
+        android:id="@+id/textviewa"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/textviewb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4583e8"
+
+            android:padding="5dp"
+            android:text=""
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textviewc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="#4583e8"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Index"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textviewe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="#4583e8"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Cummulative"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:id="@+id/textviewf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4583e8"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+
+
+
+
+    </TableRow>
+
+
+    <TableRow
+        android:id="@+id/textview1"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/tableborder3"
+            android:padding="5dp"
+            android:text="SLS"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textview3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:padding="5dp"
+            android:background="@drawable/tableborder3"
+            android:text="LMSD"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textview4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tableborder3"
+            android:gravity="center"
+
+            android:padding="5dp"
+            android:text="SPLY"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textview5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tableborder3"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Sales"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textview6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tableborder3"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="SPLY"
+
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+    </TableRow>
+
+    </TableLayout>
+
 
 
     <ListView
         android:id="@+id/list"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:background="#CACCC7"
-        android:layout_below="@+id/ason" />
+        android:layout_below="@+id/table" />
 </RelativeLayout>

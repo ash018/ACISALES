@@ -122,7 +122,6 @@ public class GraphActivity extends AppCompatActivity {
                 try {
                     JSONObject jsonObj = new JSONObject(jsonStr);
 
-                    // Getting JSON Array node
                     JSONArray sales = jsonObj.getJSONArray("salesdata");
 
 
@@ -209,6 +208,8 @@ public class GraphActivity extends AppCompatActivity {
                     }
                 });
             }
+
+
 
             return null;
         }
